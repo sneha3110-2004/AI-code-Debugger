@@ -1,0 +1,21 @@
+
+---
+Code:
+print("hello)
+Lint:
+************* Module temp_code
+temp_code.py:1:14: E0001: Parsing failed: 'EOL while scanning string literal (temp_code, line 1)' (syntax-error)
+
+Suggestions:
+No major issues detected; code looks clean.
+
+---
+Code:
+print("hello")
+Lint:
+************* Module temp_code
+temp_code.py:1:0: C0304: Final newline missing (missing-final-newline)
+temp_code.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+
+Suggestions:
+No major issues detected; code looks clean.
