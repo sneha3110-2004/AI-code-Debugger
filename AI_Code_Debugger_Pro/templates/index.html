@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Debugger Pro</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>History</h2>
+                <button id="clear-history">🗑️</button>
+            </div>
+            <div id="history-list"></div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <div class="logo-section">
+                    <h1>AI Code Debugger <span>Pro</span></h1>
+                </div>
+                <button id="theme-toggle">🌓 Toggle Theme</button>
+            </header>
+
+            <div class="editor-container">
+                <div class="input-panel">
+                    <div class="toolbar">
+                        <select id="lang">
+                            <option>Python</option>
+                            <option>C</option>
+                            <option>C++</option>
+                            <option>Java</option>
+                        </select>
+                        <button id="btn">Analyze & Fix</button>
+                    </div>
+                    <textarea id="code" placeholder="Paste your buggy code here..."></textarea>
+                </div>
+
+                <div class="output-panel">
+                    <div class="output-header">
+                        <h3>Analysis & Solution</h3>
+                        <button id="copy-btn">Copy Fix</button>
+                    </div>
+                    <div id="loader" class="hidden">🤖 AI is thinking... (CPU Mode)</div>
+                    <div id="output" class="output-box">Your results will appear here.</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
